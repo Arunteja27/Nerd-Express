@@ -1,7 +1,7 @@
 # Ride_Hailing_Program
 A ride-hailing program which tries to simulate the logic of popular ride-hailing apps.
 
-List of source files:
+List of source files:    
 Controller.h
 Controller.cc: launch() function instantiates and displays a View object to gather user input. This class is used to run tests on the application.
 CoVoiture.h
