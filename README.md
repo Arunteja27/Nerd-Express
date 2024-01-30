@@ -1,4 +1,4 @@
-# Uber Nerd Express
+# Nerd Express
 A ride-hailing program which simulates the backend logic of popular ride-hailing apps, written in C++.
 
 ## List of source files:    
