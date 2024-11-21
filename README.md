@@ -1,5 +1,5 @@
 # Nerd Express
-A ride hailing program which tries to simulate the backend logic of popular ride-hailing apps, written in C++.
+A taxi game that simulates the backend logic of popular ride-hailing apps, written in C++.
 
 ## List of source files:    
  
