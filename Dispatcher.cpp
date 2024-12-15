@@ -89,7 +89,13 @@ void Dispatcher::handleRequest(const std::string& rawPickup, const std::string& 
     }
 
     // Clear the taxi's previous position
-    map[taxi->currentPosition.first][taxi->currentPosition.second] = taxi->currentPosition.second;
+    //map[taxi->currentPosition.first][taxi->currentPosition.second] = taxi->currentPosition.second;
+    for (const auto& loc : locationMapEmote) {
+    if (loc.second == taxi->currentPosition) {
+        map[taxi->currentPosition.first][taxi->currentPosition.second] = loc.first; // Restore the emote
+        break;
+    }
+}
 
     auto start = taxi->currentPosition;
 
