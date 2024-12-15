@@ -8,7 +8,8 @@ A taxi simulation game that mimics the backend logic of ride-hailing apps, writt
 - Step-by-step visualization of taxi movements.
 
 ## Demo Video
-[![Nerd Express Demo](https://img.youtube.com/vi/CTuiCy1IAss/maxresdefault.jpg)](https://www.youtube.com/watch?v=CTuiCy1IAss&autoplay=1 "Nerd Express Demo")
+
+![Nerd Express Demo](./demo.gif)
 
 
 
