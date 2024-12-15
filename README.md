@@ -23,6 +23,8 @@ A taxi simulation game that mimics the backend logic of ride-hailing apps, writt
 
 * **main.cpp**: The entry point of the application. Initializes the game and provides a menu-driven interface for interacting with the simulation.
 
+* **TerminalRedirect.h/TerminalRedirect.cpp**: Opens GUI in separate terminal window to reduce clutter.
+
 * **Makefile**: Automates compilation and linking of the program. Contains rules for building the project, cleaning object files, and creating the executable.
 
 ## Directory Structure
