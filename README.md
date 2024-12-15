@@ -2,16 +2,14 @@
 A taxi simulation game that mimics the backend logic of ride-hailing apps, written in C++.
 
 ## Features
-- Interactive taxi simulation through the terminal.
-- Implements object-oriented principles with dynamic map updates.
-- Calculates taxi movement using Manhattan distance.
-- Step-by-step visualization of taxi movements.
+- Interactive taxi simulation with real-time updates through the terminal.
+- Uses object-oriented design to manage taxis, passengers, and the dispatcher system.
+- Implements Manhattan distance for efficient taxi assignment and shortest path calculation.
+- Dynamic map visualization showing step-by-step taxi movements and state updates.
 
 ## Demo Video
 
 ![Nerd Express Demo](./demo.gif)
-
-
 
 ## List of Source Files
 
