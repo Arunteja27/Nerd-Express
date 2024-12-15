@@ -1,7 +1,9 @@
 #include "Dispatcher.h"
+#include "TerminalRedirect.h"
 #include <iostream>
 
 int main() {
+    //openNewTerminalAndRunProgram("./taxi_simulation");
     Dispatcher dispatcher;
 
     // Add taxis to the dispatcher
