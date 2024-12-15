@@ -7,8 +7,10 @@ A taxi simulation game that mimics the backend logic of ride-hailing apps, writt
 - Calculates taxi movement using Manhattan distance.
 - Step-by-step visualization of taxi movements.
 
-## Demo
-*A short demo video will be added here soon to showcase the features of Nerd Express.*
+## Demo Video
+[![Nerd Express Demo](https://img.youtube.com/vi/CTuiCy1IAss/maxresdefault.jpg)](https://www.youtube.com/watch?v=CTuiCy1IAss&autoplay=1 "Nerd Express Demo")
+
+
 
 ## List of Source Files
 
