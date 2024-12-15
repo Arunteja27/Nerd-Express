@@ -1,53 +1,79 @@
 # Nerd Express
-A taxi game that simulates the backend logic of popular ride-hailing apps, written in C++.
+A taxi simulation game that mimics the backend logic of ride-hailing apps, written in C++.
 
-## List of source files:    
- 
-* Controller.cc: launch() function instantiates and displays a View object to gather user input. This class is used to run tests on the application.   
+## Features
+- Interactive taxi simulation through the terminal.
+- Implements object-oriented principles with dynamic map updates.
+- Calculates taxi movement using Manhattan distance.
+- Step-by-step visualization of taxi movements.
 
-  
-* CoVoiture.cc: This class will maintain multiple data structures. It will store Drivers and Customers and manage their interactions.   
+## Demo
+*A short demo video will be added here soon to showcase the features of Nerd Express.*
 
-  
-* Customer.cc: This class inherits from User   
+## List of Source Files
 
-  
-* CustomerList.cc: Maintains a list of customers using a custom data structure   
+* **Passenger.h/Passenger.cpp**: Defines the `Passenger` class, which stores and manages passenger information such as pickup and dropoff locations.
 
-* defs.h: File which contains preprocessor constants   
+* **Taxi.h/Taxi.cpp**: Defines the `Taxi` class, representing individual taxis, their availability, and current positions.
 
-  
-* Driver.cc: This class inherits from User   
+* **Dispatcher.h/Dispatcher.cpp**: Implements the `Dispatcher` class, which manages the game logic, including:
+    - Map updates.
+    - Taxi assignment based on shortest distance.
+    - Handling passenger requests and simulating taxi movements.
 
-  
-* DriverList.cc: Maintains a list of drivers using a custom data structure   
+* **main.cpp**: The entry point of the application. Initializes the game and provides a menu-driven interface for interacting with the simulation.
 
-  
-* Location.cc: Calculates current location of User object using Manhattan distance   
+* **Makefile**: Automates compilation and linking of the program. Contains rules for building the project, cleaning object files, and creating the executable.
 
-* main.cc: instantiates a Controller object and calls the launch() function in Controller   
+## Directory Structure
+```
+.
+├── Passenger.h
+├── Passenger.cpp
+├── Taxi.h
+├── Taxi.cpp
+├── Dispatcher.h
+├── Dispatcher.cpp
+├── main.cpp
+├── Makefile
+```
 
-* Makefile: Compiles a single executeable "a3" using the command "make". It also contains a "clean" command which removes the "a3" executeable and any object
-           files. This "clean" command is ran using the default "make clean".   
-           
-  
-* User.cc: Defines users (customers & drivers)   
+## Instructions for Compiling the Code
+1. Ensure you have `g++` installed (C++17 support is required).
+2. Navigate to the project directory in the terminal.
+3. Compile the code using the command:
 
-  
-* View.cc: Shows a display to gather user input    
+   ```bash
+   make
+   ```
+4. On macOS/Linux, this will generate an executable named `taxi_simulation`. On Windows, it will generate `taxi_simulation.exe`.
 
-* UML_Diagram_Arunteja.png: The UML diagram for this application   
+## Instructions for Running the Program
+1. Run the program by executing:
+   - On macOS/Linux:
 
+     ```bash
+     ./taxi_simulation
+     ```
+   - On Windows:
 
-## Directory structure:
-None, all files in one directory
+     ```cmd
+     taxi_simulation.exe
+     ```
+2. Follow the menu options to:
+   - Request a taxi.
+   - View the current map.
+   - Exit the simulation.
 
-## Instructions for compiling code:
-Compile using Makefile command "make", which makes the executeable "a3" (in Linux).
+## Coming Soon!
 
-## Instructions for running compiled program:
-Run the executeable using "./a3".
+- More complex features are in development, such as
+    - Interactive Open World UX
+    - Multiple passenger requests
+    - Advanced algorithms for taxi assingments (Dijkstra’s, machine learning demand prediction, Hungarian Algorithm for optimal assignments)
 
-## Other Notes:
-Fyi, the UML diagram (UML_Diagram_Arunteja.png) when opened on windows using Windows Photos could have greyed out boxes if your instance of Windows Photos is in Dark mode.
-This issue is fixed if you change Windows Photos to light mode. Another solution is to open the image in Paint or a Web Browser.
+## Other Notes
+- The terminal dynamically updates the map during taxi movement.
+- The game uses `std::this_thread::sleep_for` to visually display step-by-step taxi movements.
+- Feel free to fork and extend this project with additional features!
+
